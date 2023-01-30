@@ -1,0 +1,134 @@
+// @import "./breakpoints/breakpoints.scss";
+$breakpoints:(
+    "xs":0,
+    "sm":480px,
+    "md":720px,
+    "lg":960px,
+    "xl":1200px,
+);
+
+$FontFamily:Roboto;
+$FontWeight:600;
+.marketingbanner{
+    background-color:#0B1D30;
+    // height:41.3888888888vw;
+    // height:44.599999999vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .marketing{
+    background-color: #D2DAE4;
+    // margin-top:5.3333vw;
+        margin-top:4.166666666666vw;
+
+    width:84.375vw;
+    height:20.55555555555vw;
+    border-radius: 4px;
+    margin-bottom:4.166666666vw;
+
+    }
+    .text{
+        margin-top:3.125vw;
+        font-family:$FontFamily;
+        font-weight:$FontWeight;
+        font-size:2.7777vw;
+        line-height:3.255555555555vw;
+        text-align: center;
+        color: #1C4877;
+        
+
+
+
+    }
+    .touch{
+        margin-top:2.4722222vw;
+
+        color: #1C4877;     
+           font-weight: 400;
+        font-size:1.736111111vw;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+       width:15.833333333vw;
+       height:4.2361111111vw;
+       border:none;
+       margin-bottom:2.47222222vw;
+    }
+    
+}
+
+// @media (max-width: 480px){
+//   .touch{
+//     color:green;
+//   }
+
+// }
+
+// @media screen and (max-width:480){
+//     .text{
+//         color:green;
+//     }
+// }
+
+
+
+@mixin xs {
+    @media (min-width: map-get($breakpoints,"xs")){
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: map-get($breakpoints,"sm")){
+        @content;
+    }
+}
+
+@mixin md{
+    @media (min-width: map-get($breakpoints,"md")){
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: map-get($breakpoints,"lg")){
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: map-get($breakpoints,"xl")){
+        @content;
+    }
+}
+@mixin breakpoints($bp:0){
+    @media(min-width:$bp){
+        @content;
+    }
+}
+.touch{
+    @include xs {
+        color:red;
+        font-size:40px;
+    }
+    @include sm {
+        color:green;
+        font-size:100px;
+    }
+    @include md {
+        color:red;
+    }
+    @include lg{
+        color:yellow;
+    }
+    @include xl {
+        color:purple;
+    }
+    @include md {
+        color:orange;
+    }
+    @include breakpoints(1400px){
+        color:pink
+    }
+}
+// @mixin breakpoint($bp)

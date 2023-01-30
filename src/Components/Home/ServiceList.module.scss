@@ -1,0 +1,272 @@
+.Services {
+  background-color: rgba(11, 29, 48, 1);
+  .services_heading h1 {
+    color: #a4b6c9;
+    font-style: Medium;
+    font-size: 50px;
+    line-height: 59px;
+    padding-bottom: 5.55vw;
+    padding-top: 4.2vw;
+  }
+
+  .servicesBlock {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4.16vw;
+    padding-bottom: 3.47vw;
+
+    .services_salesForce_imgtext {
+      display: flex;
+      flex-direction: column;
+      height: 5.5vw;
+      align-items: start;
+      justify-content: center;
+      margin-top:1vw;
+      // background-color: blue;
+    }
+    .services_salesForce_imgtext img {
+      height: 5.55vw;
+    }
+
+    .services_salesForce_content p {
+      color: #a4b6c9;
+      font-style: "Regular";
+      font-size: 2.083vw;
+      line-height: 2.43vw;
+      padding-top: 0px;
+    }
+
+    @media (min-width: 426px) and (max-width: 2560px) {
+      .services_salesForce {
+        width: 21.52vw;
+        height: 18.26vw;
+        border: 1px solid #0b1d30;
+        border-radius: 5px;
+        background: #163a5f;
+        position: relative;
+        overflow: hidden;
+      }
+      .services_hoverel {
+        padding-left: 1.731vw;
+        width: 0%;
+        height: 100%;
+        background-color: white;
+        opacity: 0.01;
+        transition: 1s;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+      }
+      .services_test_block {
+        padding-left: 1.731vw;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+      }
+
+      .services_salesForce_content_parent {
+        height: 60%;
+        width: 90%;
+        position: relative;
+        // background-color: blue;
+        // padding-top: -80px;
+        overflow: hidden;
+        // background-color: yellow;
+      }
+      .services_salesForce_content {
+        display: flex;
+        flex-direction: column;
+        height: 9.58vw;
+        position: absolute;
+        top: 70%;
+        transition: 1s;
+      }
+
+      //Application
+      .services_salesForce_contentApp {
+        display: flex;
+        flex-direction: column;
+        height: 9.58vw;
+        position: absolute;
+        top: 63%;
+        transition: 1s;
+      }
+
+      .services_salesForce_contentApp p {
+        color: #a4b6c9;
+        font-style: "Regular";
+        font-size: 2.083vw;
+        line-height: 2.43vw;
+      }
+      .services_test_blockApp {
+        display: flex;
+        flex-direction: column;
+        height: 9.58vw;
+        position: absolute;
+        top: 36%;
+        transition: 1s;
+        // background-color: blueviolet;
+      }
+      .services_salesForce_content p {
+        color: #a4b6c9;
+        font-style: "Regular";
+        font-size: 2.083vw;
+        line-height: 2.43vw;
+      }
+
+      .services_salesForce:hover .services_salesForce_contentApp p {
+        //  margin-top: 1vw;
+        margin-bottom: 0.3vw;
+        color: white;
+      }
+      .services_salesForce:hover .services_salesForce_contentApp {
+        font-size: 1.28vw;
+        top: 0%;
+      }
+      //Application
+
+      .services_salesForce:hover .services_hoverel {
+        opacity: 1;
+        width: 100%;
+        background-color: rgba(183, 37, 46, 1);
+      }
+      @keyframes fadeOut {
+        100% {
+          opacity: 1;
+          width: 0px;
+          background-color: rgba(183, 37, 46, 1);
+          z-index: 5;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          background-color: white;
+          z-index: 5;
+        }
+        to {
+          background-color: rgba(183, 37, 46, 1);
+        }
+      }
+      .services_salesForce:hover {
+        cursor: pointer;
+        overflow: hidden;
+      }
+      //hover
+
+      .services_salesForce:hover .services_salesForce_content {
+        // padding-top: 0.1vw;
+        // position: relative;
+      }
+      .services_salesForce:hover .services_salesForce_content p {
+        margin-bottom: 0vw;
+        color: white;
+      }
+
+      .services_salesForce_hoverText {
+        // visibility: hidden;
+        color: white;
+      }
+      .services_salesForce:hover .services_salesForce_hoverText {
+        color: white;
+        // visibility: visible;
+        transition: 2s;
+      }
+
+      .services_salesForce:hover .services_salesForce_content {
+        font-size: 1.28vw;
+        top: 10%;
+      }
+    }
+    //hover
+  }
+  @media (min-width: 240px) and (max-width: 426px) {
+    .services_heading h1 {
+      color: #a4b6c9;
+      font-style: Medium;
+      font-size: 8vw;
+      line-height: 59px;
+      padding-bottom: 5.55vw;
+      padding-top: 4.2vw;
+    }
+    .servicesBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0px;
+
+      .services_test_block {
+        width: 50vw !important;
+        height: 18.26vw !important;
+        border: 1px solid #0b1d30;
+        border-radius: 5px;
+        margin-bottom: 5%;
+        background: #163a5f;
+        transition: 0.5s linear;
+        padding-left: 0vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+      }
+      .services_salesForce_imgtext {
+        display: flex;
+        height: 18.26vw;
+        // width: 25vw;
+        // align-items: start;
+        // padding-left: 25px;
+      }
+      .services_salesForce_imgtext img {
+        max-width: 9vw;
+      }
+
+      .services_salesForce_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 18.26vw !important;
+        // width: 25vw;
+        // align-items: start;
+        // padding-left: 15px;
+        top: -2px;
+      }
+      //app
+
+      .services_salesForce_contentApp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 18.26vw !important;
+        // width: 25vw;
+        // align-items: end;
+        // padding-right: 20px;
+        top: -2px;
+      }
+      .services_salesForce_contentApp p {
+        color: #a4b6c9;
+        font-style: "Regular";
+        // font-size: 2.083vw;
+        line-height: 4.43vw;
+        margin-bottom: 0px !important;
+        font-size: 3.5vw;
+        text-align: center;
+      }
+      //app
+
+      .services_salesForce_content p {
+        color: #a4b6c9;
+        font-style: "Regular";
+        font-size: 2.083vw;
+        line-height: 2.43vw;
+        margin-bottom: 0px !important;
+        font-size: 3.5vw;
+      }
+      .services_salesForce_hoverText {
+        display: none;
+      }
+     
+    }
+  }
+}

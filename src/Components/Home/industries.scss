@@ -1,0 +1,230 @@
+$bgmain:#0B1D30;
+$maindivposition:absolute;
+$maindivwidth:100%;
+$maindivHeight:50vw;
+$maindivLeft:0%;
+$maindivtop:0%;
+
+
+.industries-main-fixed-Div{
+    position: $maindivposition;
+    width: $maindivwidth;
+    height:$maindivHeight;
+    left: $maindivLeft;
+    top:$maindivtop;
+    background-color: $bgmain;
+}
+
+$industroiestextfontsize:2vw;
+$industroiestextmarginleft:42.22222222222222vw;
+
+$industriestextcolor:#A4B6C9;
+$industriestextalign:center;
+$industriestextwidth:100%;
+$industriestop:0%;
+
+.industries_text{
+    font-size:$industroiestextfontsize;
+    text-align:$industriestextalign;
+    width:$industriestextwidth;
+    top:$industriestop;
+    margin-top: 5.555555555555556vw;
+    margin-bottom: 5.555555555555556vw;
+    font-size: 3.472222222222222vw;
+    font-weight: 500;
+    color:$industriestextcolor;
+   
+}
+
+
+$slicknexbtnposition:absolute;
+$slicknextright:45vw;
+$slicknexttop:32vw;
+
+
+.slick-next{
+    position:$slicknexbtnposition;
+    right:$slicknextright;
+    top:$slicknexttop;
+    height: 0% !important;
+    width: 0%;    
+    line-height: 0% !important;
+    display: none;
+}
+
+$slickprevposition:absolute;
+$slickprevleft:45vw;
+$top:32vw;
+
+.slick-prev{
+    position:$slickprevposition;
+    left: $slickprevleft;
+    top: $top;
+    height: 0% !important;
+    width: 0%;
+    line-height: 0% !important;
+    display: none;
+}
+.slick-prev:hover{
+    // background-color: white;
+    height: 2.847222222222222vw;
+    width: 2.847222222222222vw;
+    border-radius: 0.2083333333333333vw;
+}
+
+$industriescardsubdivheight:100%;
+$industriescardflex:flex;
+$industriescardalignitem:center;
+
+.industries-cards-subDiv{
+    height:$industriescardsubdivheight;
+    width:$industriescardsubdivheight;
+    display:$industriescardflex;
+    align-items:$industriescardalignitem;
+}
+
+$slidetransform:scale(.7);
+$slidebackgroundcolor:#FFFFFF;
+$slidewidth: 21.875vw;
+$slideheight:20.75vw;
+$sidedisplay:flex;
+$slidealignitem:center;
+$slideborderradius:0.4027777777777778VW;
+$slidetransition:0.5s linear;
+$slidefontsize:1vw;
+$slidefontweight: 500;
+$slideopacity:0.5;
+
+
+.slide{
+    transform: $slidetransform;
+    background-color:$slidebackgroundcolor;
+    width:$slidewidth;
+    height:$slideheight;
+    display:$sidedisplay;
+    align-items:$slidealignitem;
+    border-radius:$slideborderradius;
+    transition: $slidetransition;
+    font-size:$slidefontsize;
+    font-weight:$slidefontweight;
+    opacity:$slideopacity;
+    display: flex;
+    align-items: center;
+    margin-top: 3.9vw;
+}
+
+.slide-active{
+    transform: scale(1); 
+    width:39.27777777777778vw !important;
+    height:28.68055555555556vw; 
+    border-radius: 0.4027777777777778VW;
+    font-size: 1.155555vw;
+    font-weight: 500;  
+    opacity: 1;
+    margin-top: 0%;
+    margin-left: -9.5% !important;
+}
+
+
+.image{
+    height: 100%;
+    width: 100%;    
+}
+.industries-imageDiv{
+    height: 90%;
+    width: 50%;
+    margin-left: 5%;
+}
+.industries_card_text_div{
+    font-size: 200%;
+    width:15vw;
+    margin-left: 4%;
+} 
+
+.industries_lorem_div{
+    font-size: 60%;
+    font-weight: 500 !important;
+    color: #163A5F;
+}
+
+.industries_text_heading{
+    color: #E52E3A;
+}
+
+.slick-prev:before{
+    background-color:white;
+    font-family:none;
+    color: red;
+    opacity: 1;   
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 0.1vw;
+    padding: 0.2vw;
+    font-weight: 550;
+    line-height: 0% !important;
+}
+.slick-next:before{
+    background-color:white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+    opacity: 1;  
+    border-radius: 0.09vw;
+    padding: 0.2vw;
+    font-weight: 550;
+    line-height: 0% !important;
+}
+@media only screen and (max-width: 768px) {
+    .slick-next{
+        right:10vw !important;
+        display: none !important;
+    }
+    .slick-prev{
+        left: 10vw;
+        display: none !important;
+    }
+.industries-cards-subDiv{
+    position: absolute;
+    right: -20.3vw;
+    height:50vw;
+    width:80vw;
+    z-index: 50 !important;
+    background-color:#FFFFFF;
+    border-radius: 1vw;
+}
+.slide-active{
+    opacity: 1 !important;
+    right: -25.3vw;
+    height:50vw;
+    width:90vw;
+}
+.slide{
+   opacity: 0;
+}
+
+.industries_card_text_div{
+    font-size: 350%;
+    width:35vw;
+    margin-left: 4%;
+    text-align: left;
+} 
+
+.industries_lorem_div{
+    font-size: 70%;
+    font-weight: 500 !important;
+    color: #163A5F;
+}
+
+.industriesfirst_div{
+    position: relative !important;
+    height: 74.9vw !important;
+}
+.industries_text{
+    font-size: 5vw;
+}
+
+    
+}
+.industriesfirst_div{
+    position: relative !important;
+    height: 50.9vw;
+    background-color: #0B1D30;
+}

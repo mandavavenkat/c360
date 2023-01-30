@@ -1,0 +1,605 @@
+.bannermain {
+    background-color: #0B1D30;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    .imgbanner {
+        padding-top: 40px;
+        color: white;
+        width: 93%;
+        padding-left: 80px;
+        padding-bottom: 80px;
+        margin-left: 43px;
+        position: relative;
+        top: 25px;
+        height: 90vh;
+        overflow: hidden;
+    }
+
+    .banner1 {
+        background-image: url('../../Assets/bannerimg1.png');
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .image1 {
+            // width: inherit;
+            // height: 45.027778vw;
+            height: auto;
+            width: 100%;
+            ;
+        }
+
+     
+
+    }
+
+    .banner2 {
+        background-image: url('../../Assets/bannerimg2.png');
+        // background-color: green;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 200%;
+        animation: img2 9.9s linear infinite;
+        left: 200%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image2 {
+            width: inherit;
+            height: 45.027778vw;
+        }
+
+    }
+
+
+
+    // @keyframes img2 {
+    //     0% {
+    //         left: 200%;
+    //     }
+
+    //     20% {
+    //         left: 200%;
+    //     }
+    //     30% {
+    //         left: 200%;
+    //     }
+
+    //     50% {
+    //         left: 0%;
+    //     }        
+    //     80% {
+    //         left: 0%;
+    //     }
+
+    //     90% {
+    //         left: 0%;
+    //     }
+    // 100% {
+    //         left: 200%;
+    //     }
+    // }
+
+
+    @keyframes img2 { 
+        0% {
+          left: 200%
+        }
+        30.30%{
+            left: 200%;
+        }
+        33.33% {
+          left: 0%;
+        }
+        96.96% {
+            left: 0%;
+        }
+        100% {
+          left: 200%;
+        }
+      }
+
+      @keyframes img3 {
+        0% {
+          left: 200%;
+        }
+        63.63% {
+            left:200%;
+        }
+        66.66% {
+          left:0%;
+        }
+        96.96% {
+            left: 0%;
+        }
+        100% {
+          left: 200%;
+        }
+      }
+    
+
+    .banner3 {
+        background-image: url('../../Assets/bannerimg3.png');
+        // background-color: yellow;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 200%;
+        animation: img3 9.9s linear infinite;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .image3 {
+            width: inherit;
+            height: 45.027778vw;
+        }
+    } 
+    
+    // @keyframes img3 {
+    //     0% {
+    //         left: 200%;
+    //     }
+
+    //     20% {
+    //         left: 200%;
+    //     }
+    //     30% {
+    //         left: 200%;
+    //     }
+
+    //     50% {
+    //         left: 200%;
+    //     }               
+    //     75% {
+    //         left: 0%;
+    //     }
+    //     90% {
+    //         left: 0%;
+    //     }
+
+        
+    // 100% {
+    //         left: 200%;
+    //     }
+    // }
+    .getintouch {
+        // width: 15.83333333333333vw;
+        // height: 7.95703125vh;
+        color: #1C4877;
+
+        border: none;
+        border-radius: 8px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 29px;
+        position: absolute;
+        left: 50%;
+        
+        top: 70%;
+        transform: translate(-50%, -50%);
+        padding: 11px 23px 11px 23px;
+    }
+
+    
+
+    
+   
+
+
+    .banner__caption {
+        display: flex;
+        position: relative !important;
+        // margin-top: 2.5vw;
+        // margin-bottom: 0vw;
+        // background-color: red;
+        height: 23vw;
+        width: 100%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10vw;
+
+        span {
+            position: absolute;
+         font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 4.166vw;
+            text-align: center;
+            color: #FFFFFF;
+            // left: 20%;
+
+            animation: text1 9.9s linear infinite;
+            // top: 23vw;
+            
+        }
+        .text1{
+            position: absolute;
+            font-family: 'Roboto';
+               font-style: normal;
+               font-weight: 500;
+               font-size: 4.166vw;
+               text-align: center;
+               color: #FFFFFF;
+            //    left: 5%;
+               animation: text2 9.9s linear infinite;
+            //    top: 23vw;
+               color:#FFFFFF;
+            //    margin-top: 7vw;
+               
+        }
+        .text2{
+            position: absolute;
+            font-family: 'Roboto';
+               font-style: normal;
+               font-weight: 500;
+               font-size: 4.166vw;
+               color: #FFFFFF;
+            //    left: 5%;
+               animation: text3 9.9s linear infinite;
+            //    top: 23vw;
+            //    margin-top: 7vw;
+        }
+    }
+    @keyframes text1 {
+    0%{
+        top:23vw;
+    }
+     1.01%{
+        top:23vw;
+    }
+     4.04%{
+        top: 0%;
+    }
+     27.27%{
+        top: 0%;
+      }
+      30.3%{
+        top:23vw
+      }
+     99.99%{
+        top: 23vw;
+     }
+     
+    }
+
+    @keyframes text2 {
+        0%{
+         top: 23vw;
+        }
+       
+        34.34%{
+         top: 23vw;
+        }
+       
+     37.37%{
+        top: 0%;
+     }
+     60.6%{
+        top: 0%;
+     }
+     63.63%{
+        top: 25vw;
+     }
+     99.99%{
+        top: 25vw;
+     }
+     }
+
+     @keyframes text3 {
+        0%{
+         top: 23vw;
+        }
+       
+        67.67%{
+         top: 23vw;
+        }
+       
+     70.7%{
+         top: 0%;
+        }
+        93.93%{
+            top: 0%;
+        }
+        96.96%{
+            top:23vw
+        }
+        99.99%{
+            top:23vw;
+        }
+     }
+ 
+}
+
+
+
+
+// .banner__main {
+//     background-color: #0B1D30;
+
+//     position: relative !important;
+
+
+//     .banner__content {
+//         width: 92.02777777777778vw;
+//         margin-bottom: 60px;
+
+
+//         .banner1,
+//         .banner2,
+//         .banner3 {
+//             height:600px;
+//             margin-top: 60px;
+//             // height: 78.125vh;
+
+
+//             img {
+
+//                 width: inherit;
+//                 height: 45.027778vw;
+
+//             }
+
+
+
+
+//             @keyframes fadeInUp {
+//                 0% {
+//                   opacity: 0;
+//                   transform: translateY(100%);
+//                 }
+//                 100% {
+//                   color: #F1F1F1;
+//                   opacity: 1;
+//                   transform: translate(0%);
+//                 }
+//               }
+
+
+//            .banner__caption{
+
+//             h1 {
+//                 font-family: 'Roboto';
+//                 font-style: normal;
+//                 font-weight: 500;
+//                 font-size: 70px;
+//                 line-height: 90px;
+//                 text-align: center;
+//                 color: #FFFFFF;
+
+
+//                 animation: fadeInUp 0.5s  ease 0.7s forwards;
+//                 opacity: 0;
+
+//             }
+//            }
+
+
+//         }
+
+
+
+
+//     }
+//     .getintouch {
+//         // width: 15.83333333333333vw;
+//         // height: 7.95703125vh;
+//         color: #1C4877;
+//         border: none;
+//         border-radius: 8px;
+//         font-family: 'Roboto';
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 25px;
+//         line-height: 29px;
+//         position: absolute;
+//         left: 50%;
+//         top: 36vw;
+//         transform: translate(-50%,50%);
+//         padding: 11px 23px 11px 23px;
+
+
+
+//     }
+
+
+
+//     @media screen and (max-device-width:1960px){
+//         .banner__content {
+
+//             .banner1,
+//             .banner2,
+//             .banner3 {
+
+//                 .banner__caption{
+//                     position: absolute;
+//                     bottom: 11.25rem;
+
+//                 }
+//             }
+//         }
+
+//     }
+//     @media screen and (max-device-width:1440px) {
+//         .banner__content {
+
+//             .banner1,
+//             .banner2,
+//             .banner3 {
+
+//                 .banner__caption{
+//                     position: absolute;
+//                     bottom: 10.25rem;
+
+
+//                     h1 {
+//                         font-size: 48px;
+//                         line-height: 70px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     @media screen and (max-device-width:981px) {
+
+//         .getintouch {
+//             font-size: 18px;
+//             width: max-content;
+//             height: auto;
+//             padding: 3px 11px 3px 11px;
+//         }
+//         .banner__content {
+
+//             .banner1,
+//             .banner2,
+//             .banner3 {
+//                 .banner__caption {
+//                     position: absolute;
+//                     bottom: 6.25rem;
+
+//                     h1 {
+//                         font-size: 39px;
+//                         line-height: 60px;
+//                     }
+
+
+
+//                 }
+
+//             }
+
+
+//         }
+
+
+//     }
+
+
+//     @media screen and (max-device-width:760px) {
+
+//         .getintouch {
+//             font-size: 13px;
+//             width: max-content;
+//             height: auto;
+//             top: 25vh;
+//             padding: 6px 15px 6px 15px;
+
+//         }
+//         .banner__content {
+
+//             .banner1,
+//             .banner2,
+//             .banner3 {
+//                 .banner__caption {
+//                     position: absolute;
+//                     bottom: 6.25rem;
+
+//                     h1 {
+//                         font-size: 28px;
+//                         line-height: 45px;
+//                     }
+
+
+//                 }
+//             }
+//         }
+//     }
+
+//     @media screen and (max-device-width:541px) {
+
+//         .getintouch {
+//             font-size: 11px;
+//             position: absolute;
+//             top: 24vh;
+//             width: max-content;
+//             height: auto;
+//             padding: 0px 7px 0px 7px;
+//         }
+//         .banner__content {
+
+//             .banner1,
+//             .banner2,
+//             .banner3 {
+
+//                 .banner__caption {
+//                     // position: absolute;
+//                     // bottom: 23.25rem;
+
+//                     h1 {
+//                         font-size: 14px;
+//                         line-height: 33px;
+//                     }
+
+
+//                 }
+//             }
+//         }
+//     }
+
+//     @media screen and (max-device-width:440px){
+//         .getintouch {
+//             font-size: 11px;
+//             position: absolute;
+//             top: 21.50vh;
+//             width: max-content;
+//             height: auto;
+//             padding: 0px 7px 0px 7px;
+//         }
+//         .banner__content {
+
+//             .banner1,
+//             .banner2,
+//             .banner3 {
+
+
+//                 .banner__caption {
+//                     position: absolute;
+//                     bottom: 2.50rem;
+
+//                     h1 {
+//                         font-size: 14px;
+//                         line-height: 25px;
+//                     }
+
+
+//                 }
+//             }
+//         }
+//     }
+//     // @media screen and (max-device-width:360px){
+//     //     .getintouch {
+//     //         font-size: 11px;
+//     //         position: absolute;
+//     //         top: 17.50vh;
+//     //         width: max-content;
+//     //         height: auto;
+//     //         padding: 0px 7px 0px 7px;
+//     //     }
+//     // }
+
+
+
+// }

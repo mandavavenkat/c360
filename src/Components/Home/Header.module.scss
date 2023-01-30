@@ -1,0 +1,102 @@
+.header__main {
+
+    background: #D2DAE4;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+    // position: fixed;
+    // height: 33.54166666666667vw;
+
+    // background: #0B1D30;
+
+    .header__elements {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 4.166666666666667vw;
+            img {
+            width: 2.777777777777778vw;
+            height: 2.777777777777778vw;
+
+            // width: 19.44444444444444vw;
+            // height: 19.44444444444444vw;
+        }
+
+
+        ul {
+            display: flex;
+            margin-bottom: 0px !important;
+            // margin-left: 33.06944444444444vw;
+            gap: 3.722222vw;
+            // position: fixed;
+
+            li {
+                list-style: none;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: #5F5F5F;
+            }
+        }
+
+       
+    }
+
+    // .largelogo {
+    //     display: flex;
+    //     align-items: baseline;
+    //     margin-top: 7%;
+
+    //     img {
+    //         // width: 2.777777777777778vw;
+    //         // height: 2.777777777777778vw;
+
+    //         width: 19.44444444444444vw;
+    //         height: 19.44444444444444vw;
+    //     }
+
+    //     h1 {
+    //         font-family: 'Roboto';
+    //         font-style: normal;
+    //         font-weight: 500;
+    //         font-size: 120px;
+    //         line-height: 141px;
+    //         color: #FFFFFF;
+    //     }
+    // }
+    @media screen and (max-device-width:767px) {
+        .header__elements{
+         ul{
+             li{
+                display:none;
+             }
+         }
+         .menubutton{
+            display: block;
+         }
+        } 
+ }
+    @media screen and (min-device-width:768px) {
+           .header__elements{
+
+            ul{
+                li{
+                    display: block;
+                }
+            }
+            .menubutton{
+                display: none;
+             }
+           } 
+    }
+    @media screen and (max-device-width:1024px){
+        .header__elements{
+
+            ul{
+                li{
+                   font-size: 12px;
+                }
+            }
+           } 
+    }
+}

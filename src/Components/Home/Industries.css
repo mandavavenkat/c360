@@ -1,0 +1,283 @@
+/* *{
+    font-style: "Roboto";
+}
+
+.Industries_Main_DIv{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  
+
+}
+ .body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display:'flex';
+    align-items: center;
+    background-color:#0B1D30;
+    overflow: hidden;
+    position: fixed;
+    left: 0%;
+    top: 0%;    
+}
+.slide-container{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: hidden !important;
+}
+.image-slider{
+width: 280vw;
+height: 100%;
+position: absolute;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: .7s;
+}
+.slides-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+.img{
+    position: relative;
+    width:21.875vw;
+    height:13.75vw;
+    transition: .5s;
+    opacity: 0.5;
+    background-color:#FFFFFF;
+    border-radius: 0.4027777777777778VW;
+    color: #E52E3A;
+}
+.button{
+    position: absolute;
+    height: 18.75vw;
+    width: 28.90625vw;
+    transition: .5s;
+}
+
+#slider-span1:target ~ .image-slider #img1 ,
+#slider-span1:target ~ .image-slider #button-1{
+    
+    width:40.27777777777778vw;
+    height: 28.68055555555556vw;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    font-size: 2.777777777777778vw;  
+
+}
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2{
+    width:40.27777777777778vw;
+    height:28.68055555555556vw;
+    background-color: transparent;
+    opacity: 1;
+    font-size: 2.777777777777778vw;    
+}
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3{
+    width:40.27777777777778vw;
+    height:28.68055555555556vw;
+    background-color: transparent;
+    opacity: 1;
+    font-size: 2.777777777777778vw;
+}
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4{
+    width:40.27777777777778vw;
+    height: 28.68055555555556vw;
+    background-color: transparent;
+    opacity: 1;
+    font-size: 2.777777777777778vw;
+}
+#slider-span5:target ~ .image-slider #img5,
+#slider-span5:target ~ .image-slider #button-5{
+    width:40.27777777777778vw;
+    height: 28.68055555555556vw;
+    background-color: transparent;
+    opacity: 1;
+    font-size: 2.777777777777778vw;
+}
+#slider-span6:target ~ .image-slider #img6,
+#slider-span6:target ~ .image-slider #button-6{
+    width:40.27777777777778vw;
+    height: 28.68055555555556vw;
+    background-color: transparent;
+    opacity: 1;
+    filter: saturate(100%);
+    font-size: 2.777777777777778vw;
+}
+#slider-span7:target ~ .image-slider #img7,
+#slider-span7:target ~ .image-slider #button-7{
+    width:40.27777777777778vw;
+    height:28.68055555555556vw;
+    background-color: transparent;
+    opacity: 1;
+    font-size: 2.777777777777778vw;
+}
+#slider-span8:target ~ .image-slider #img8,
+#slider-span8:target ~ .image-slider #button-8{
+    width:40.27777777777778vw;
+    height:28.68055555555556vw;
+    background-color: transparent;
+    opacity: 1;
+    font-size: 2.777777777777778vw;
+}
+#slider-span9:target ~ .image-slider #img9,
+#slider-span9:target ~ .image-slider #button-9{
+    width:40.27777777777778vw;
+    height:28.68055555555556vw;
+    background-color: transparent;
+    opacity: 1;
+    font-size: 2.777777777777778vw;
+}
+#slider-span10:target ~ .image-slider #img10,
+#slider-span10:target ~ .image-slider #button-10{
+    width:40.27777777777778vw;
+    height:28.68055555555556vw;
+    background-color: transparent;
+    opacity: 1;
+    font-size: 2.777777777777778vw;
+}
+
+
+
+
+#slider-span1:target ~ .image-slider {left:30vw;}
+#slider-span2:target ~ .image-slider {left:3vw;}
+#slider-span3:target ~ .image-slider {left:-24vw;}
+#slider-span4:target ~ .image-slider {left:-50vw;}
+#slider-span5:target ~ .image-slider {left:-76.5vw;}
+#slider-span6:target ~ .image-slider {left:-103.5vw;}
+#slider-span7:target ~ .image-slider {left:-130vw;}
+#slider-span8:target ~ .image-slider {left:-156.5vw;}
+#slider-span9:target ~ .image-slider {left:-182.5vw}
+#slider-span10:target ~ .image-slider {left:-210vw;}
+
+
+.industries_cards_Sub_div{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 0.4027777777777778VW;
+    display: flex;
+    align-items:center;
+}
+.industries_image_Div{
+    height: 90%;
+    width: 40%;
+    margin-left: 5%;
+}
+.industries_image{
+    height: 100%;
+    width: 100%;
+}
+
+.industries_text_Div{
+    width: 30%;
+    margin-left: 3%;
+}
+.finance_text_div{
+    height: 100%;
+    width: 18vw;
+    margin-left: 5%;
+}
+
+.industries_finance_text{
+    font-size:100%;
+    font-weight: 500;
+}
+
+.industry_finance_subtext_Div{
+    height: 50%;
+    font-size:50%;
+} */
+
+
+/* .industries-main-fixed-Div{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0%;
+    top:0%;
+    background-color: #0B1D30;
+}
+.industries-subDiv{
+    margin-top: 4%;
+}
+.slick-next{
+    position: absolute;
+    right: 10%;
+    top: 30vw;
+    
+}
+
+.slick-prev{
+    position: absolute;
+    left: 10%;
+    top: 30vw;
+}
+
+
+
+.industries-cards-subDiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slide{
+    transform: scale(.7);
+    background-color: #FFFFFF;
+    width: 21.875vw;
+    height: 20.75vw;
+    display: flex;
+    align-items: center;
+    background-color:white;
+    border-radius: 0.4027777777777778VW;
+    transition: 0.5s linear;
+    font-size: 1vw;
+    font-weight: 500;
+   
+}
+
+.slide-active{
+    transform: scale(1); 
+    width:40.27777777777778vw;
+    height:28.68055555555556vw; 
+    border-radius: 0.4027777777777778VW;
+    font-size: 1.255555vw;
+    font-weight: 500;  
+    
+}
+
+
+.image{
+    height: 100%;
+    width: 100%;    
+}
+.industries-imageDiv{
+    height: 90%;
+    width: 40%;
+    margin-left: 5%;
+}
+.industries_card_text_div{
+    font-size: 200%;
+    width:19vw;
+    color: red;
+    margin-left: 2%;
+}
+.industries_lorem_div{
+    font-size: 50%;
+    font-weight: 300 !important;
+} */
